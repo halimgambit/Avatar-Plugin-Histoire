@@ -26,7 +26,7 @@ let storyName = data.action.rawSentence.toLowerCase().replace("mets l'histoire",
 		});
 
 	  } else {
-		Avatar.speak(`Je mets l'histoire "${storyName}" n'est pas disponible.`, data.client, () => {
+		Avatar.speak(`l'histoire "${storyName}" n'est pas disponible.`, data.client, () => {
 		  Avatar.Speech.end(data.client);
 		});
 	  }
